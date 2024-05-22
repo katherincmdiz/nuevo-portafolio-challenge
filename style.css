@@ -51,7 +51,8 @@ section.menu{
     display: flex;
     justify-content: space-between;
    align-items: center;
-   padding: 16px 32px;
+   padding: 16px 8px 16px 8px;
+   gap: 15px;
    background-color: #789369;
 }
 .menu__header{
@@ -127,7 +128,49 @@ section.about{
 .about__container img{
     width: 180px;
 }
-/*Sección Hobbies*/
+/*Seccion Soft Skills*/
+section.soft-skills{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+
+}
+.soft-skills__title{
+    text-align: center;
+    font-size:  17px;
+    font-weight: bold;
+}
+.soft-skills__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 30px;
+    border-style: solid 2px;
+    
+}
+.soft-skills__box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    background-color: rgb(249, 240, 227);
+    border: 1px solid #789369;
+    height: 60px;
+    width: 250px;
+    box-shadow: 0 8px 8px #789369;
+    border-style: none;
+}
+.soft-skills__name{
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+
+/*Sección skills fuertes*/
 section.skills{
     display: flex;
     flex-direction: column;
@@ -144,7 +187,7 @@ section.skills{
     padding-bottom: 30px;
 }
 .skills__box{
-    border-style: solid;
+    border-style: none;
     border-width: 1px;
     border-color: #789369;
     background-color: white;
@@ -173,7 +216,7 @@ section.hobbies{
 }
 .hobbies__box{
     text-align: center;
-    border-style: solid;
+    border-style: none;
     border-width: 1px;
     border-color: #789369;
     background-color:white;
@@ -276,7 +319,9 @@ section.academic{
     transition: 2s;
     transform: scale(1.1);
 }
-.experience__botao--demo{
+.experience__botao--demo{ 
+    height: 48px;
+    width: 150px;
     border-color:  #789369;
     background-color: #789369;
     color:#f8f6f6;
@@ -324,11 +369,13 @@ section.academic{
     padding-top: 15px;
 }
 .formcontato__input{
+    border: 1px solid #000;
     height: 30px;
     padding-left: 5px;
     border-radius: 8px;
 }
 .formcontato__textarea{
+    border: 1px solid #000;
     resize: none;
     padding-left: 5px;
     border-radius: 8px;
@@ -339,7 +386,7 @@ section.academic{
 
 .formcontato__botao{
     font-size: 20px;
-    width: 30%;
+    width: 40%;
     transition: 0.3s;
     cursor: pointer;
     padding: 10px 20px;
@@ -470,6 +517,7 @@ section.menu{
     font-size:15px;
     gap: 40px
 }
+
 /*Sección sobre mi*/
 section.about{
     display: flex;
@@ -485,6 +533,9 @@ section.about{
     justify-content: center;
     width: 85%;
     font-size: 20px;
+}
+.soft-skills__title{
+    font-size: 30px;
 }
 /*Skills*/
 .skills__title{
@@ -541,7 +592,11 @@ section.academic{
    justify-content: center;
 }
 .experiencia__botao--repo, .experience__botao--demo{
-   font-size: 25px;
+   font-size: 28px;
+}
+.experience__botao--demo{
+    height: 60px;
+    width: 200px;
 }
  /*Contacto*/
  
