@@ -198,48 +198,12 @@
                     <li class="academic__courses__item__subtitle"><p>2024 - Alura</p></li>
                 </ul>
             </div>
-            <!--<div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                     Pon el logotipo de la institución de formación 
-                    <li class="academic__courses__item__img"><img src="assets\ufrj_logo.png"></li>
-                    <li class="academic__courses__item__title"><h4>Posgrado en diseño</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>En curso - UFRJ</p></li>
-                </ul>
-            </div>-->
         </div>
     </section>
 
     <!-- Sección de Experiencia Profesional/Proyectos-->
     <section class="experience" id="xp">
         <h2 class="experience__section__title" >Experiencia Profesional</h2>
-        <!--<div class="experiencie__box">
-             Pon el logotipo/captura de pantalla de tu proyecto 
-            <img class="experience__img" src="assets\decod_print.png">
-            <div class="experience__info"
-                <h2 class="experience__title">Encriptador de texto</h2>
-                <h3 class="experience__text">Challenge Alura Codificador </h3>
-                    <div class="experience__description">
-                         Pon el enlace del proyecto en Github o GithubPages 
-                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div>  -->
-
-       <!-- <div class="experiencie__box">
-             Pon el logotipo/captura de pantalla de tu proyecto 
-            <img class="experience__img" src="assets\forca_print.png">
-            <div class="experience__info"
-                <h2 class="experience__title">Juego creado con HTML y JavaScript</h2>
-                <h3 class="experience__text">Challenge Oracle </h3>
-                    <div class="experience__description">
-                        Pon el enlace del proyecto en Github o GithubPages
-                            <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-juego-ahorcado"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experience__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div>  -->
-
         <div class="experience__box">
             <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
             <img class="experience__img" src="assets\secretcode_print.png">
@@ -277,14 +241,14 @@
                     <h2 class="formcontato__title">Contacto</h2>
                     <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
                     <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                    <form class="formcontato__form" name="form" onsubmit="return validarFormulario()">
-                        <input class="formcontato__input" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    <form class="formcontato__form" id="form" data-form>
+                        <input class="formcontato__input" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
                         <div class="error" id="errorNombre"></div>
-                        <input class="formcontato__input" type="email" name="email" id="email"  placeholder="E-mail">
+                        <input class="formcontato__input" type="email" name="email" id="email"  placeholder="E-mail" required>
                         <div class="error" id="errorEmail"></div>
-                        <input class="formcontato__input" type="text" name="asunto" id="asunto" placeholder="Assunto">
+                        <input class="formcontato__input" type="text" name="asunto" id="asunto" placeholder="Asunto" required>
                         <div class="error" id="errorAsunto"></div>
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
                         <div class="error" id="errorMensaje"></div>
                         <button type="submit" class="formcontato__botao" id="botonEnviar"  disabled>Enviar mensaje</button>
                     </form>
@@ -301,6 +265,6 @@
         </section>
     </div>
  <!-- Script del documento JavaScript -->
-<script src="validacion.js"></script>
+<script src="js/main.js" type="module"></script>
 </body>
 </html>
